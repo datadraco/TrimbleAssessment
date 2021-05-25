@@ -31,3 +31,7 @@ salary_df['SALARY'] = salary_df['SALARY'].astype(int)
 print("Minimum Salary (> 0):",
       salary_df[salary_df['SALARY'] > 0]['SALARY'].min())
 print("Maximum Salary:", salary_df['SALARY'].max())
+
+# It would be nice to also classify the names by M/F and possibly group the
+# position titles in some way so that dummies could be created from those
+# categorical features in order to model
